@@ -1,10 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+   
+}
+
 li {
     list-style: none;
+    font-size: 0.85em;
 }
 
 a {
     text-decoration: none;
+    color: ;
 }
+
+
+h1 {
+    color: hsl(233, 26%, 24%);
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h2 {
+    color: hsl(233, 26%, 24%);
+}
+
+h4 {
+    color: hsl(233, 8%, 62%);
+    font-size: 1em;
+}
+
+p {
+    color: hsl(233, 8%, 62%);
+    font-size: 1em;
+}
+
+
+.invite p {
+    background-image: linear-gradient(to right, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+    border-radius: 4em;
+    padding: 1em 2.5em;
+    color: hsl(0, 0%, 100%);
+    width: fit-content;
+    
+}
+
 
 
 
