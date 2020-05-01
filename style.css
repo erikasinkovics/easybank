@@ -5,8 +5,6 @@ body {
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
     margin: 0;
-    width: 100%
-    
 }
 
 li {
@@ -15,8 +13,7 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: ;
+    text-decoration: none;    
 }
 
 
@@ -69,34 +66,32 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.25em;
-    padding-bottom: 1.25em;
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 100;
     top: 0;
-    
-    
 }
 
 img .hamburger {
     width: 24px;
     height: 16px;
-    padding-right: 1.25em;
     
 }
 
 .hamburger {
-    padding-right: 1.25em;
+   
 }
 
 .header .logo {
-    padding-left: 1.25rem;
+    display: flex;
+    align-items: center;
+
 }
 
 .header .navigation {
     display: none;
+    font-size: 0.9em;
 }
 
 .header .invite {
@@ -107,34 +102,37 @@ img .hamburger {
     position: relative;
     top: 0;
     left: 0;
-    
+    width: 100%;
 }
 
 .intro {
     justify-content: center;
     width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
 }
 
 .intro-text {
     text-align: center;
     align-items: center;
-    padding: 1em;
     margin: 0;
-    margin-bottom: 3em;
+    
 }
+
 .intro .invite {
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
+
 .intro-images {
     position: relative;
+    overflow-x: hidden;
     overflow-y: hidden;
-    height: 390px;
+    height: 850px;
+    width: 100%;
     text-align: right;
-
 }
 
 .intro-desktop {
@@ -148,10 +146,9 @@ img .hamburger {
     margin: 0;
     max-width: 100% ;
     right: 0;
-    
 }
 
-.mockups {
+/* .mockups {
     height: auto;
     position: relative;
     z-index: 1;
@@ -159,7 +156,7 @@ img .hamburger {
     margin: 0;
     max-width: 375px;
     right: 0;
-}
+} */
 
 
 .why-easybank {
@@ -167,17 +164,10 @@ img .hamburger {
     margin: 0;
     text-align: center;
     width: 100%;
-    padding-bottom: 3em;
-    padding-top: 3em;
+    width: 100%;
 }
 
-.why-easybank h2 {
-    padding: 0 1em;
-}
 
-.why-easybank-title {
-    padding: 0 2em;
-}
 
 .why-easybank p {
     line-height: 1.75em;
@@ -190,17 +180,16 @@ img .hamburger {
 
 .features {
     margin-top: 3em;
-    padding: 0em 1.5em;
 }
 
-.blog {
+.blogposts {
     width: 100%;
     margin: 0;
     background-color: hsl(0, 0%, 98%);
 }
 
-.blog-wrapper {
-    padding: 0em 1.5em 1em 1.5em;
+.blog {
+   
     background-color: hsl(0, 0%, 98%);
 }
 
@@ -208,25 +197,23 @@ img .hamburger {
 .article {
     background-color: white;
     margin-bottom: 2em;
-    padding-bottom: 1em;
-    
+
+    overflow: hidden;
 }
 
 .article img {
-   width: 100%;
+   width: 250px;
    border-top-left-radius: 0.25em;
    border-top-right-radius: 0.25em;
-   
 }
 
 .article-text {
-    padding: 1em 1.5em 1em 1.5em;
+
 }
 
 .article p span {
     font-size: 0.8em;
     font-weight: 300;
-    padding-bottom: 1em;
     margin: 0;
 }
 
@@ -234,18 +221,14 @@ img .hamburger {
     font-size: 0.72em;
     font-weight: 300;
     line-height: 1.5em;
-    padding-bottom: 0.5em;
     margin: 0;
 }
 
 .article h4 {
     font-size: 0.9em;
     font-weight: 400;
-    padding-bottom: 0.25em;
     margin: 0;
 }
-
-
 
 footer {
     background-color: hsl(233, 26%, 24%);
@@ -256,11 +239,10 @@ footer {
     align-items: center;
 }
 
-
-
 footer .logo {
     margin-top: 2em;
 }
+
 .social-media nav{
     display: flex;
     flex-direction: row;
@@ -268,7 +250,6 @@ footer .logo {
 }
 
 .social-media li {
-    padding-right: 1em;
     margin: 2em 0; 
 }
 
@@ -279,7 +260,7 @@ footer .invite p {
 }
 
 .site-navigation li {
-    padding-bottom: 1em;
+   
 }
 
 .site-navigation a {
@@ -293,3 +274,244 @@ footer .invite p {
 
 .attribution { font-size: 11px; text-align: center; color: hsl(220, 16%, 96%); margin-top: 2em;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 600px) {
+
+    .wrapper {
+        padding-right: 7em;
+        padding-left: 7em;
+    }
+
+
+    .header .logo {
+        padding-left: 7em;
+    }
+
+    .header .navigation {
+        display: inline-block;
+    }
+
+    .header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .header li {
+        padding-right: 1.75em;
+        color: hsl(220, 16%, 96%);
+    }
+
+    .header a {
+        color: hsl(233, 8%, 62%);
+        font-weight: 300;
+    }
+
+    .header {
+        width: 100%;
+        text-align: left;
+
+    }
+   
+    .header .invite {
+        display: inline;
+        padding-right: 7em;
+        
+    }
+
+
+
+    .intro-text {
+        width: 50%;
+        text-align: left;
+        padding-top: 11em;
+        padding-bottom: 8em;
+    }
+
+    .intro-text h1 {
+        font-size: 3em;
+        padding: 0;
+        margin-bottom: 0em;
+    }
+
+    .intro-text h4 {
+        font-size: 0.95em;
+        font-weight: 300;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+    
+    .intro-mobile {
+        display: none;
+        
+    }
+
+    .intro .invite {
+        text-align: left;
+        display: inline;
+    }
+    
+    .mockups {
+        height: auto;
+        position: relative;
+        z-index: 50;
+        top: -2.5em;
+        left: 5em;
+        margin: 0;
+        max-width: 1400px;
+        right: 0;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .why-easybank {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        
+    }
+
+    .why-easybank .wrapper {
+        padding-bottom: 4.5em;
+        padding-top: 4em;
+    }
+    
+    .why-easybank-title {
+        text-align: left;
+        width: 100%;
+        /* padding-left: 8em; */
+    }
+
+    .why-easybank-title h2 {
+        /* padding: 0; */
+        font-size: 2.2em;
+        width: 100%;
+    }
+
+    .why-easybank-title p {
+        font-size: 1em;
+        width: 70%;
+    }
+
+    .features-wrapper {
+        display: flex;
+        flex-direction: row;
+        /* padding: 2em 7em 2em 7em; */
+        width: 100%;
+    }
+
+    .features {
+        text-align: left;
+        width: 100%;
+        margin-right: 1.75em;
+    }
+
+    .features h3 {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+
+    .features p {
+        font-size: 0.9em;
+    }
+
+    .blogposts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2.75em;   
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog h2 {
+        font-size: 2.1em;
+    }
+
+    .blog .wrapper {
+        padding-bottom: 2.5em;
+        padding-top: 3em;
+    }
+    
+    .article {
+        /* padding: 0em; */
+        margin-right: 1.75em;
+        width: 100%;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    .article-text {
+        padding: 1em 1.5em 1em 1.5em;
+    }
+
+    .article h4 {
+        line-height: initial;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    footer .logo {
+        margin: 0;
+        margin-top: 0.5em;
+        margin-bottom: 1.25em;
+        
+    }
+
+    .footer-navigation {
+        padding-left: 7em;
+        flex-grow: 1;
+        
+    }
+    
+    footer .wrapper {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        
+    }
+
+    .site-navigation {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.15em;
+        font-weight: 300;
+        flex-grow: 1.5;
+        padding-left: 5em;
+    }
+
+    .site-navigation nav {
+        padding-right: 6em;
+        text-align: left;
+        line-height: 1.75em;
+    
+    }
+
+    .social-media li {
+        padding-right: 0.75em;
+        
+    }
+
+    .footer-bottom {
+        text-align: right;
+        padding-right: 7em;
+        flex-grow: 1.5;
+    }
+
+
+
+}
