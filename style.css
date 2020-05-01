@@ -69,7 +69,7 @@ p {
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 102;
     top: 0;
 }
 
@@ -103,12 +103,13 @@ img .hamburger {
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 .intro {
+    background-color: hsl(0, 0%, 98%);
     justify-content: center;
     width: 100%;
-    background-color: hsl(0, 0%, 98%);
     margin: 0;
 }
 
@@ -283,7 +284,6 @@ footer .invite p {
         padding-left: 7em;
     }
 
-
     .header .logo {
         padding-left: 7em;
     }
@@ -320,11 +320,9 @@ footer .invite p {
         padding-right: 7em;
         
     }
-
-
-
+ 
     .intro-text {
-        width: 50%;
+        width: 38%;
         text-align: left;
         padding-top: 11em;
         padding-bottom: 8em;
@@ -352,6 +350,32 @@ footer .invite p {
         text-align: left;
         display: inline;
     }
+
+    .test-desktop {
+        position: absolute;
+        z-index: 50;
+        right: -450px;
+        top: -190px;
+        overflow: hidden;
+        width: 
+        
+    }
+
+    .test-desktop img {
+        clip-path: inset(0% 35.45% 0% 0%);
+    }
+
+
+    .test-mockups {
+        position: absolute;
+        z-index: 100;
+        right: -180px;
+        top: -80px;
+    }
+
+    .test-mockups img {
+        clip-path: inset(0% 23.53% 0% 0%);
+    }
     
     .mockups {
         height: auto;
@@ -371,7 +395,7 @@ footer .invite p {
 
     .why-easybank {
         position: relative;
-        z-index: 0;
+        z-index: 51;
         width: 100%;
         
     }
@@ -384,11 +408,10 @@ footer .invite p {
     .why-easybank-title {
         text-align: left;
         width: 100%;
-        /* padding-left: 8em; */
+  
     }
 
     .why-easybank-title h2 {
-        /* padding: 0; */
         font-size: 2.2em;
         width: 100%;
     }
@@ -401,7 +424,6 @@ footer .invite p {
     .features-wrapper {
         display: flex;
         flex-direction: row;
-        /* padding: 2em 7em 2em 7em; */
         width: 100%;
     }
 
@@ -441,7 +463,6 @@ footer .invite p {
     }
     
     .article {
-        /* padding: 0em; */
         margin-right: 1.75em;
         width: 100%;
     }
