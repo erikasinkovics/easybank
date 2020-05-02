@@ -47,7 +47,10 @@ p {
     font-weight: 300;
 }
 
-
+.wrapper {
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+}
 
 .invite p {
     background-image: linear-gradient(to right, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
@@ -61,6 +64,10 @@ p {
     display: inline-block;
 }
 
+.invite:hover {
+    opacity: 0.5;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -71,21 +78,25 @@ p {
     position: fixed;
     z-index: 102;
     top: 0;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    
 }
 
 img .hamburger {
     width: 24px;
     height: 16px;
-    
+        
 }
 
 .hamburger {
-   
+   padding-right: 1.4em;
 }
 
 .header .logo {
     display: flex;
     align-items: center;
+    padding-left: 1.4em;
 
 }
 
@@ -106,6 +117,14 @@ img .hamburger {
     overflow: hidden;
 }
 
+.test-mockups {
+    display: none;
+}
+
+.test-desktop {
+    display: none;
+}
+
 .intro {
     background-color: hsl(0, 0%, 98%);
     justify-content: center;
@@ -116,8 +135,12 @@ img .hamburger {
 .intro-text {
     text-align: center;
     align-items: center;
-    margin: 0;
-    
+    margin: 0;   
+}
+
+.intro h1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 .intro .invite {
@@ -129,11 +152,7 @@ img .hamburger {
 
 .intro-images {
     position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 850px;
-    width: 100%;
-    text-align: right;
+    text-align: right;   
 }
 
 .intro-desktop {
@@ -149,16 +168,19 @@ img .hamburger {
     right: 0;
 }
 
-/* .mockups {
-    height: auto;
-    position: relative;
+.mockups {
+    position: absolute;
     z-index: 1;
-    top: -27.5em;
+    top: -3.75em;
     margin: 0;
     max-width: 375px;
     right: 0;
-} */
+    
+}
 
+.wrapper-intro {
+    padding-bottom: 4em;
+}
 
 .why-easybank {
     background-color: hsl(220, 16%, 96%);
@@ -166,13 +188,16 @@ img .hamburger {
     text-align: center;
     width: 100%;
     width: 100%;
+    padding-top: 2em;
 }
 
-
+.why-easybank h2 {
+    font-size: 1.75em;
+}
 
 .why-easybank p {
-    line-height: 1.75em;
-    font-size: 0.8em;
+    line-height: 1.8em;
+    font-size: 0.80em;
 }
 
 .why-easybank h3 {
@@ -180,37 +205,55 @@ img .hamburger {
 }
 
 .features {
-    margin-top: 3em;
+    margin-top: 2em;
 }
+
+.features-wrapper {
+    padding-bottom: 3em;
+    padding-top: .5em;
+}
+
+
 
 .blogposts {
     width: 100%;
-    margin: 0;
+    margin-top: 1.9em;  
     background-color: hsl(0, 0%, 98%);
 }
 
+.blog .wrapper {
+    padding-bottom: 2.5em;
+    padding-top: 3em;
+}
+
 .blog {
-   
+    width: 100%;
     background-color: hsl(0, 0%, 98%);
+}
+
+.blog h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 0em;
 }
 
 
 .article {
     background-color: white;
-    margin-bottom: 2em;
-
+    margin-bottom: 1.5em;
     overflow: hidden;
 }
 
 .article img {
-   width: 250px;
+   width: 100%;
    border-top-left-radius: 0.25em;
    border-top-right-radius: 0.25em;
 }
 
 .article-text {
-
+    padding: 1em 1.5em 2.5em 1.5em;
 }
+
 
 .article p span {
     font-size: 0.8em;
@@ -226,10 +269,16 @@ img .hamburger {
 }
 
 .article h4 {
+    color: hsl(233, 26%, 24%);
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: initial;
 }
+
+
 
 footer {
     background-color: hsl(233, 26%, 24%);
@@ -247,7 +296,9 @@ footer .logo {
 .social-media nav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0em 0.8em 0em 0.8em;
+
 }
 
 .social-media li {
@@ -266,11 +317,12 @@ footer .invite p {
 
 .site-navigation a {
     color: white;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    line-height: 2.75em;
 }
 
 .site-navigation {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .attribution { font-size: 11px; text-align: center; color: hsl(220, 16%, 96%); margin-top: 2em;}
@@ -332,6 +384,7 @@ footer .invite p {
         font-size: 3em;
         padding: 0;
         margin-bottom: 0em;
+        margin-top: 0.75em;
     }
 
     .intro-text h4 {
@@ -339,6 +392,10 @@ footer .invite p {
         font-weight: 300;
         padding: 0;
         margin-bottom: 1em;
+    }
+
+    .intro-images {
+        display: none;
     }
     
     .intro-mobile {
@@ -357,8 +414,7 @@ footer .invite p {
         right: -450px;
         top: -190px;
         overflow: hidden;
-        width: 
-        
+        display: inline;       
     }
 
     .test-desktop img {
@@ -371,6 +427,7 @@ footer .invite p {
         z-index: 100;
         right: -180px;
         top: -80px;
+        display: inline;
     }
 
     .test-mockups img {
@@ -386,6 +443,10 @@ footer .invite p {
         margin: 0;
         max-width: 1400px;
         right: 0;
+    }
+
+    .wrapper-intro {
+        padding-bottom: 0em;
     }
 
 
@@ -425,6 +486,7 @@ footer .invite p {
         display: flex;
         flex-direction: row;
         width: 100%;
+        padding: 0;
     }
 
     .features {
@@ -464,10 +526,6 @@ footer .invite p {
     
     .article {
         margin-right: 1.75em;
-        width: 100%;
-    }
-
-    .article img {
         width: 100%;
     }
 
@@ -513,6 +571,7 @@ footer .invite p {
         font-weight: 300;
         flex-grow: 1.5;
         padding-left: 5em;
+        margin-bottom: 0em;
     }
 
     .site-navigation nav {
