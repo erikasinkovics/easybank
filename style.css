@@ -347,6 +347,15 @@ footer .invite p {
         display: inline-block;
     }
 
+    .navigation li a:hover{
+        color: hsl(233, 26%, 24%);
+        padding-bottom: 27px;
+        border: 10px solid;
+        border-width: 0px 0px 4px 0px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, #31d35c, #2bb7da);
+    }
+
     .header nav {
         display: flex;
         flex-direction: row;
@@ -558,6 +567,11 @@ footer .invite p {
         margin-bottom: 0.5em;
     }
 
+    .article h4:hover{
+        color: hsl(136, 65%, 51%);
+        cursor: pointer;
+    }
+
     footer .logo {
         margin: 0;
         margin-top: 0.5em;
@@ -599,6 +613,10 @@ footer .invite p {
         padding-right: 6em;
         text-align: left;
         line-height: 1.75em;
+    }
+
+    .site-navigation a:hover{
+        color: hsl(136, 65%, 51%);
     }
 
     .social-media {
@@ -664,3 +682,14 @@ footer .invite p {
         display: none;
     }
 } 
+
+@media only screen and (max-width: 845px) {
+    
+    .features {
+        width: 200px;
+    }
+    
+    .article {
+        width: 200px;
+    }
+}
