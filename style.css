@@ -618,7 +618,49 @@ footer .invite p {
         padding-right: 9.5em;
         flex-grow: 1;
     }
-
-
-
 }
+
+@media only screen and (max-width: 1175px) {
+    .test-mockups {
+        display: none;
+    }
+
+    .test-desktop {
+        display: none;
+    }
+
+    .intro-text {
+        width: 70%;
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .features-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .features {
+        width: 240px;
+        margin-right: 0;
+    }
+
+    .blogposts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 250px;   
+        margin-right: 0;
+    }
+
+    .site-navigation {
+        display: none;
+    }
+} 
